@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala Tourism </title>
+    <link rel="stylesheet" href="arts.css">
+     <style>
+      p{
+        font-size: larger;
+      }
+      input[type=text], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:bisque;
+}
+input[type=tel], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:bisque;
+}
+input[type=password], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:bisque;
+}
+button[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+
+button[type=button] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color:bisque;
+}
+button[type=button]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+     </style>
+</head>
+<body>
+  <nav class="navbar">
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Artsform.html">Arts Form</a></li>
+      <li><a href="Signup.html">Sign Up</a></li>
+      <li><a href="Login.html">Login</a></li>
+      <li><a href="Contact.html">Contact Us</a></li>
+    </ul>
+   </nav>
+    <div class="signup-form">
+        <form action="index.html" onsubmit = "return validate()">
+            <h2>Sign Up</h2><br>
+            <p>Please fill in this form to create an account!</p>
+            <hr>
+        <div class="form-group">
+            <label for="exampleInputEmail1">Enter Username</label><br>
+            <input type="text" class="form-control" id="username" placeholder="" ><br>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Enter email id </label><br>
+          <input type="text" class="form-control" id="email" placeholder=""><br>
+          <label for="emailerror" id="emailerror"></label>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Enter Phone number</label><br>
+          <input type="tel" class="form-control" id="mobno" placeholder=""><br>
+          <label for="moberror" id="moberror"></label>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Enter password</label><br>
+          <input type="password" onkeypress="StrengthChecker()" class="form-control" name="password" id="password" placeholder=""><br>
+          <span id="StrengthDisp" class="badge displayBadge"></span>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Re-enter password</label><br>
+          <input type="password" class="form-control" id="confirm_password" placeholder=""><br>
+        </div>
+        <div class="form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1" style="font-family:Georgia, 'Times New Roman', Times, serif;">Check me out</label>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button><br>
+        <button type="button" class="btn btn-link">I have an account..</button>
+      </form>
+</div>
+</body>
+</html>

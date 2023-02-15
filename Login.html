@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="arts.css">
+    <style>
+      p{
+        font-size: large;
+      }
+       input[type=email], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:bisque;
+}
+input[type=password], select {
+  width: 50%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  background-color:bisque;
+}
+button[type=submit] {
+  width: 20%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button[type=submit]:hover {
+  background-color: #45a049;
+}
+button[type=button]:hover {
+  background-color: #45a049;
+}
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Artsform.html">Arts Form</a></li>
+          <li><a href="Signup.html">Sign Up</a></li>
+          <li><a href="Login.html">Login</a></li>
+          <li><a href="Contact.html">Contact Us</a></li>
+        </ul>
+       </nav>
+       <form>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label"><p style="color: rgb(18, 18, 22);">Email <Address></Address></p></label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"><p style="color: rgb(10, 10, 13);">We'll never share your email with anyone else.</p><br></div>
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label"><p style="color: rgb(8, 8, 9);">Password</p></label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <div class="mb-3 form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1"><p style="color: rgb(15, 15, 15);">check me out</p></label>
+        </div>
+        <button type="submit" class="btn btn-primary">submit</button>  
+</body>
+</html>
